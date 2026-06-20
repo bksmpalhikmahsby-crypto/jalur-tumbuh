@@ -14,5 +14,5 @@ ringkasan: >-
   1. Alat Ukur MBTI, link: https://bksmpalhikmahsby-crypto.github.io/MBTI_Alhikmah/ 
 
   2. Alat Ukur ABM, Gaya Belajar, MI, & Motivasi Belajar, Link: https://benevolent-paletas-67d590.netlify.app/
-link: ""
+link: "https://docs.google.com/presentation/d/1neew1HIl0YyaPbO30VZImI7mxJHmp4sA/edit?usp=drive_link&ouid=111279260221850636978&rtpof=true&sd=true"
 ---
