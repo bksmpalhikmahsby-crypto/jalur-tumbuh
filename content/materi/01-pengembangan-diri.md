@@ -8,5 +8,11 @@ ringkasan: >-
   yang disedikan, berupa MBTI, ABM, Gaya Belajar, MI, & Motivasi Belajar.
 
   Kalian akan memiliki gambaran jelas tentang diri kalian. Kerjakan sesuai keadaan diri kalian, tidak ada jawaban benar dan salah, agar mendapatkan cerminan tentang diri kalian sebenarnya.
-link: https://docs.google.com/document/d/1ekpnQBjIuf98XyUczmfazfNcYnUVv1pE15C78Yw31pQ/edit?usp=sharing
+
+  Silakan, dikerjakan sesuai instruksi guru BK
+
+  1. Alat Ukur MBTI, link: https://bksmpalhikmahsby-crypto.github.io/MBTI_Alhikmah/ 
+
+  2. Alat Ukur ABM, Gaya Belajar, MI, & Motivasi Belajar, Link: https://benevolent-paletas-67d590.netlify.app/
+link: ""
 ---
