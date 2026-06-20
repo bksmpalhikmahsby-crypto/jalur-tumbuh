@@ -1,0 +1,12 @@
+{
+  "name": "jalur-tumbuh",
+  "version": "1.0.0",
+  "description": "Situs BK SMP Al Hikmah Surabaya — Jalur Tumbuh",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
