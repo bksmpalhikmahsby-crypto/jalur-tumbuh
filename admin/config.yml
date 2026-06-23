@@ -10,6 +10,39 @@ media_folder: "css/uploads"
 public_folder: "/css/uploads"
 
 collections:
+  - name: "pengaturan"
+    label: "Pengaturan Beranda"
+    files:
+      - name: "site"
+        label: "Teks Beranda"
+        file: "content/site.md"
+        fields:
+          - { label: "Hero — Label kecil di atas judul", name: "hero_eyebrow", widget: "string" }
+          - { label: "Hero — Judul baris 1", name: "hero_judul_1", widget: "string" }
+          - { label: "Hero — Judul baris 2 (miring/oranye)", name: "hero_judul_2", widget: "string" }
+          - { label: "Hero — Deskripsi", name: "hero_deskripsi", widget: "text" }
+          - { label: "Hero — Teks tombol 1", name: "hero_tombol_1", widget: "string" }
+          - { label: "Hero — Teks tombol 2", name: "hero_tombol_2", widget: "string" }
+          - { label: "Ayat — Teks Arab", name: "ayat_arab", widget: "string" }
+          - { label: "Ayat — Arti/terjemahan", name: "ayat_arti", widget: "string" }
+          - { label: "Ayat — Sumber (contoh: QS. Taha: 114)", name: "ayat_sumber", widget: "string" }
+          - { label: "Tim BK — Label kecil", name: "profil_eyebrow", widget: "string" }
+          - { label: "Tim BK — Judul", name: "profil_judul", widget: "string" }
+          - { label: "Tim BK — Deskripsi", name: "profil_deskripsi", widget: "text" }
+          - { label: "Materi — Label kecil", name: "materi_eyebrow", widget: "string" }
+          - { label: "Materi — Judul", name: "materi_judul", widget: "string" }
+          - { label: "Materi — Deskripsi", name: "materi_deskripsi", widget: "text" }
+          - { label: "Berita — Label kecil", name: "berita_eyebrow", widget: "string" }
+          - { label: "Berita — Judul", name: "berita_judul", widget: "string" }
+          - { label: "Media Sosial — Label kecil", name: "sosmed_eyebrow", widget: "string" }
+          - { label: "Media Sosial — Judul", name: "sosmed_judul", widget: "string" }
+          - { label: "Media Sosial — Judul bagian Video", name: "video_heading", widget: "string" }
+          - { label: "Konsultasi — Label kecil", name: "info_eyebrow", widget: "string" }
+          - { label: "Konsultasi — Judul", name: "info_judul", widget: "string" }
+          - { label: "Konsultasi — Deskripsi/instruksi", name: "info_deskripsi", widget: "text" }
+          - { label: "Konsultasi — Lokasi", name: "info_lokasi", widget: "string" }
+          - { label: "Footer — Teks hak cipta", name: "footer_teks", widget: "string" }
+
   - name: "materi"
     label: "Materi Layanan Klasikal"
     folder: "content/materi"
