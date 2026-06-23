@@ -64,7 +64,11 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
     <div class="tim-grid">
       {% for orang in collections.profil %}
       <div class="tim-card">
+        {% if orang.data.foto %}
+        <img src="{{ orang.data.foto }}" alt="{{ orang.data.nama }}" class="tim-avatar tim-avatar-photo">
+        {% else %}
         <div class="tim-avatar">{{ orang.data.inisial }}</div>
+        {% endif %}
         <h3>{{ orang.data.nama }}</h3>
         <div class="tim-role">Guru BK — SMP Al Hikmah Surabaya</div>
         <a class="tim-wa" href="https://wa.me/62{{ orang.data.whatsapp | replace('0','',1) }}" target="_blank" rel="noopener">💬 WhatsApp</a>
