@@ -87,7 +87,13 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
         <span class="num">{{ m.data.num }}</span>
         <h3>{{ m.data.title }}</h3>
         <p>{{ m.data.ringkasan }}</p>
-        <a class="open" href="{{ m.data.link or '#' }}">Buka materi <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        {% if m.data.links and m.data.links.length %}
+        <div class="link-list">
+          {% for l in m.data.links %}
+          <a href="{{ l.url }}" target="_blank" rel="noopener"><i class="link-ic">↗</i>{{ l.label }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>
@@ -128,13 +134,6 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
           <div class="sos-note">@insightgram.cons</div>
         </div>
       </a>
-      <a class="sos-card sos-yt" href="#" target="_blank" rel="noopener">
-        <div class="sos-top"><span class="sos-icon">▶</span></div>
-        <div>
-          <div class="sos-name">YouTube</div>
-          <div class="sos-note">Video materi klasikal</div>
-        </div>
-      </a>
       <a class="sos-card sos-em" href="mailto:bk.smp.alhikmahsby@gmail.com">
         <div class="sos-top"><span class="sos-icon">✉️</span></div>
         <div>
@@ -143,6 +142,24 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
         </div>
       </a>
     </div>
+
+    {% if collections.video.length %}
+    <div class="video-section">
+      <h3 class="video-heading"><span class="sos-icon">▶</span> Video YouTube — terhubung materi klasikal</h3>
+      <div class="video-list">
+        {% for v in collections.video %}
+        <a class="video-item" href="{{ v.data.youtube_url }}" target="_blank" rel="noopener">
+          <span class="video-judul">{{ v.data.judul }}</span>
+          {% for m in collections.materi %}
+            {% if m.data.num == v.data.materi_terkait %}
+            <span class="video-tag">Materi {{ m.data.num }} — {{ m.data.title }}</span>
+            {% endif %}
+          {% endfor %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
   </div>
 </section>
 
