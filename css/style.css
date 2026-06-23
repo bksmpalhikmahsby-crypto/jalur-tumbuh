@@ -51,6 +51,9 @@ nav.wrap{ display:flex; align-items:center; justify-content:space-between; heigh
   background:var(--teal); display:flex;align-items:center;justify-content:center;
   color:var(--cream); font-family:'Fraunces',serif; font-size:1rem; flex-shrink:0;
 }
+.brand-logo{
+  width:36px; height:36px; flex-shrink:0; object-fit:contain;
+}
 .navlinks{ display:flex; gap:28px; font-size:0.92rem; font-weight:500; }
 .navlinks a{ text-decoration:none; color:var(--ink); opacity:0.75; transition:opacity 0.2s; }
 .navlinks a:hover, .navlinks a:focus-visible{opacity:1;}
