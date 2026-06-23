@@ -21,18 +21,18 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Bimbingan &amp; Konseling — Ruang Tumbuh Siswa</span>
-      <h1>Setiap langkah kecil, <em>menuju arah yang jelas.</em></h1>
-      <p class="lede">Materi layanan klasikal, alat ungkap minat &amp; bakat, hingga obrolan ringan soal masa depan — semua ada di sini. Tempat siswa mengenal dirinya, satu materi sekaligus.</p>
+      <span class="eyebrow">{{ site.hero_eyebrow }}</span>
+      <h1>{{ site.hero_judul_1 }} <em>{{ site.hero_judul_2 }}</em></h1>
+      <p class="lede">{{ site.hero_deskripsi }}</p>
       <div class="hero-ctas">
-        <a href="#materi" class="btn btn-primary">Lihat Materi Klasikal</a>
-        <a href="#profil" class="btn btn-ghost">Kenalan dengan Tim BK</a>
+        <a href="#materi" class="btn btn-primary">{{ site.hero_tombol_1 }}</a>
+        <a href="#profil" class="btn btn-ghost">{{ site.hero_tombol_2 }}</a>
       </div>
 
       <div class="ayat-box">
-        <div class="ayat-arab">وَقُل رَّبِّ زِدْنِي عِلْمًا</div>
-        <div class="ayat-arti">"Dan katakanlah (Muhammad), 'Wahai Tuhanku, tambahkanlah ilmu kepadaku.'"</div>
-        <span class="ayat-sumber">QS. Taha: 114</span>
+        <div class="ayat-arab">{{ site.ayat_arab }}</div>
+        <div class="ayat-arti">{{ site.ayat_arti }}</div>
+        <span class="ayat-sumber">{{ site.ayat_sumber }}</span>
       </div>
     </div>
     <div class="pathwrap">
@@ -57,9 +57,9 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section id="profil">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Tim BK</span>
-      <h2>Enam orang yang siap mendampingi.</h2>
-      <p>Klik ikon WhatsApp untuk menghubungi langsung personel BK terkait.</p>
+      <span class="eyebrow">{{ site.profil_eyebrow }}</span>
+      <h2>{{ site.profil_judul }}</h2>
+      <p>{{ site.profil_deskripsi }}</p>
     </div>
     <div class="tim-grid">
       {% for orang in collections.profil %}
@@ -81,9 +81,9 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section id="materi">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Layanan Klasikal</span>
-      <h2>Materi yang sudah dan akan dibahas di kelas.</h2>
-      <p>Klik salah satu topik untuk membuka rangkuman, slide, atau lembar kerja terkait.</p>
+      <span class="eyebrow">{{ site.materi_eyebrow }}</span>
+      <h2>{{ site.materi_judul }}</h2>
+      <p>{{ site.materi_deskripsi }}</p>
     </div>
     <div class="materi-grid">
       {% for m in collections.materi %}
@@ -107,8 +107,8 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section id="berita">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Berita &amp; Informasi</span>
-      <h2>Kabar terbaru dari ruang BK.</h2>
+      <span class="eyebrow">{{ site.berita_eyebrow }}</span>
+      <h2>{{ site.berita_judul }}</h2>
     </div>
     <div class="berita-list">
       {% for b in collections.berita %}
@@ -127,8 +127,8 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section id="sosmed">
   <div class="wrap">
     <div class="section-head">
-      <span class="eyebrow">Terhubung</span>
-      <h2>Pantau kegiatan BK dari mana saja.</h2>
+      <span class="eyebrow">{{ site.sosmed_eyebrow }}</span>
+      <h2>{{ site.sosmed_judul }}</h2>
     </div>
     <div class="sosmed-grid">
       <a class="sos-card sos-ig" href="https://instagram.com/insightgram.cons" target="_blank" rel="noopener">
@@ -149,7 +149,7 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 
     {% if collections.video.length %}
     <div class="video-section">
-      <h3 class="video-heading"><span class="sos-icon">▶</span> Video YouTube — terhubung materi klasikal</h3>
+      <h3 class="video-heading"><span class="sos-icon">▶</span> {{ site.video_heading }}</h3>
       <div class="video-list">
         {% for v in collections.video %}
         <a class="video-item" href="{{ v.data.youtube_url }}" target="_blank" rel="noopener">
@@ -170,9 +170,9 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
 <section id="info">
   <div class="wrap">
     <div class="info-box">
-      <span class="eyebrow" style="color:var(--marigold);">Cara Konsultasi</span>
-      <h3>Ingin berkonsultasi?</h3>
-      <p>Hubungi wali kelas untuk membuat jadwal konsultasi, atau langsung hubungi WhatsApp personel BK berikut sesuai kelas/kebutuhan:</p>
+      <span class="eyebrow" style="color:var(--marigold);">{{ site.info_eyebrow }}</span>
+      <h3>{{ site.info_judul }}</h3>
+      <p>{{ site.info_deskripsi }}</p>
 
       <div class="kontak-grid">
         {% for orang in collections.profil %}
@@ -186,12 +186,12 @@ title: "Jalur Tumbuh — BK SMP Al Hikmah Surabaya"
       <div class="info-divider"></div>
       <div class="info-lokasi">
         <span class="lbl">Lokasi</span>
-        Ruang BK, SMP Al Hikmah Surabaya
+        {{ site.info_lokasi }}
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 Tim BK SMP Al Hikmah Surabaya — Jalur Tumbuh
+  {{ site.footer_teks }}
 </footer>
