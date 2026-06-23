@@ -16,7 +16,26 @@ collections:
       - { label: "Nomor Urut (2 digit, contoh 07)", name: "num", widget: "string" }
       - { label: "Judul Materi", name: "title", widget: "string" }
       - { label: "Ringkasan", name: "ringkasan", widget: "text" }
-      - { label: "Link Materi (Slide/PDF/Drive)", name: "link", widget: "string", required: false }
+      - label: "Link-link Materi (Slide / Alat Ukur / Drive, bisa lebih dari satu)"
+        name: "links"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Nama Link (contoh: Slide Materi, Alat Ukur MBTI)", name: "label", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+
+  - name: "video"
+    label: "Video YouTube"
+    folder: "content/video"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Judul Video", name: "judul", widget: "string" }
+      - { label: "Link YouTube", name: "youtube_url", widget: "string" }
+      - label: "Materi Terkait (isi Nomor Urut materi, contoh 01)"
+        name: "materi_terkait"
+        widget: "string"
+        required: false
 
   - name: "profil"
     label: "Profil Tim BK"
