@@ -14,6 +14,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("content/berita/*.md").sort((a, b) => new Date(b.data.tanggal) - new Date(a.data.tanggal));
   });
 
+  eleventyConfig.addCollection("video", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("content/video/*.md");
+  });
+
   return {
     dir: {
       input: ".",
