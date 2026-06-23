@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: bksmpalhikmahsby-crypto/jalur-tumbuh
   branch: main
+  base_url: https://sveltia-cms-auth.bk-smp-alhikmahsby.workers.dev
+  auth_endpoint: auth
 
 publish_mode: simple
 media_folder: "css/uploads"
