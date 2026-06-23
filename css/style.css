@@ -163,6 +163,57 @@ hr.div{ border:none; border-top:1px solid var(--line); }
 .card .open svg{ width:14px; height:14px; transition:transform 0.15s; }
 .card .open:hover svg{ transform:translateX(3px); }
 
+.link-list{
+  border-top:1px solid var(--line);
+  margin-top:16px;
+  padding-top:12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.link-list a{
+  font-size:0.85rem;
+  font-weight:500;
+  color:var(--coral);
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:6px;
+}
+.link-list a:hover{ text-decoration:underline; }
+.link-list .link-ic{ font-style:normal; font-size:0.8rem; }
+
+.video-section{
+  margin-top:24px;
+}
+.video-heading{
+  font-size:1rem;
+  color:var(--teal-deep);
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:14px;
+}
+.video-list{ display:flex; flex-direction:column; gap:10px; }
+.video-item{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:14px 18px;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  transition:transform 0.15s ease;
+}
+.video-item:hover{ transform:translateY(-2px); }
+.video-judul{ font-weight:600; color:var(--teal-deep); font-size:0.95rem; }
+.video-tag{
+  font-family:'JetBrains Mono', monospace;
+  font-size:0.74rem;
+  color:var(--coral);
+}
+
 /* BERITA */
 .berita-list{ display:flex; flex-direction:column; gap:16px; }
 .berita-item{
