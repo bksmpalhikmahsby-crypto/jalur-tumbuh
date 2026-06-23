@@ -47,7 +47,11 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Nama Lengkap & Gelar", name: "nama", widget: "string" }
-      - { label: "Inisial (2 huruf untuk avatar)", name: "inisial", widget: "string" }
+      - { label: "Inisial (2 huruf untuk avatar, dipakai jika foto belum diisi)", name: "inisial", widget: "string" }
+      - label: "Foto (opsional)"
+        name: "foto"
+        widget: "image"
+        required: false
       - { label: "Nomor WhatsApp (format 08...)", name: "whatsapp", widget: "string" }
       - { label: "Urutan Tampil (angka)", name: "urutan", widget: "number" }
 
